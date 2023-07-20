@@ -12,6 +12,11 @@
   ul#menu {
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100vw;
+    list-style-type: none;
+    padding: 0;
+    background-color: aqua;
   }
 </style>
 
