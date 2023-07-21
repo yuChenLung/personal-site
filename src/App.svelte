@@ -1,5 +1,6 @@
 <script>
   import Experience from "./pages/Experience.svelte";
+  import Profile from "./pages/Profile.svelte";
   import Projects from "./pages/Projects.svelte";
 
   export let menu = "exp";
@@ -15,20 +16,39 @@
     left: 0;
     width: 100vw;
     list-style-type: none;
-    padding: 0;
-    background-color: aqua;
+    padding-left: 0;
+    padding-top: 4px;
+    /* padding-bottom: 4px; */
+    /* background-color: blue; */
+  }
+  #menu-1 {
+    padding-right: 10px;
+    width: 50px;
+    /* background-color: red; */
+  }
+  #menu-3 {
+    padding-left: 15px;
+    padding-right: 3px;
+    /* background-color: blue; */
   }
 </style>
 
 <ul id="menu">
-  <li><a href="/" on:click|preventDefault={() => (menu = "exp")}>Experience</a></li> |
-  <li><a href="/" on:click|preventDefault={() => (menu = "proj")}>Projects</a></li>
+  <li id="menu-1"><a href="/" on:click|preventDefault={() => (menu = "exp")}>Experience</a></li>
+  <li id="menu-2"><a href="/" on:click|preventDefault={() => (menu = "prof")}>Yu-Chen Lung</a></li>
+  <li id="menu-3"><a href="/" on:click|preventDefault={() => (menu = "proj")}>Projects</a></li>
 </ul>
+<br>
+<hr>
+<br>
+
 
 {#if menu == "exp"}
 <Experience/>
 {:else if menu == "proj"}
 <Projects/>
+{:else if menu == "prof"}
+<Profile/>
 {:else}
 <h1>Page Not Found</h1>
 {/if}
