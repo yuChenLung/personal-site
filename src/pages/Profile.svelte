@@ -14,7 +14,7 @@
 </style>
 
 <div class="flex-horiz horiz-align-center vert-align-center top-space">
-    <img src={profile} alt="Profile photo">
+    <img src={profile} alt="Yu-Chen Lung"/>
     <div class="text-align-left">
         <h2>Yu-Chen Lung</h2>
         Computer Science, B.S.<br>
