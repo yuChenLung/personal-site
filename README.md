@@ -1,4 +1,7 @@
-# Yu-Chen Lung Personal Website
+# Yu-Chen Lung 
+## Personal Website
+
+https://yuchenlung.github.io/personal-site/
 
 Developed in Svelte with Vite.
 
