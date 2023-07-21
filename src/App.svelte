@@ -18,18 +18,14 @@
     list-style-type: none;
     padding-left: 0;
     padding-top: 4px;
-    /* padding-bottom: 4px; */
-    /* background-color: blue; */
   }
   #menu-1 {
     padding-right: 10px;
     width: 50px;
-    /* background-color: red; */
   }
   #menu-3 {
     padding-left: 15px;
     padding-right: 3px;
-    /* background-color: blue; */
   }
 </style>
 
@@ -40,8 +36,6 @@
 </ul>
 <br>
 <hr>
-<br>
-
 
 {#if menu == "exp"}
 <Experience/>
