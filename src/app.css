@@ -21,11 +21,14 @@ a {
 a:hover {
   color: gray;
 }
+a:visited {
+  color: inherit;
+}
 
 body {
   margin: 0;
   display: flex;
-  min-width: 320px;
+  min-width: 30px;
   min-height: 100vh;
 }
 
@@ -40,7 +43,7 @@ h1 {
 
 #app {
   max-width: 100vw;
-  min-width: 20vw;
+  min-width: 30vw;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -50,6 +53,7 @@ button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
+  margin: 0.6em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -58,7 +62,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: inherit;
 }
 button:focus,
 button:focus-visible {
@@ -71,14 +75,32 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #707a8c;
+    color: gray;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #eeeeee;
   }
 }
 
 .flex-horiz {
   display: flex;
   flex-direction: row;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.vert-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.horiz-align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.top-space {
+  margin-top: 30px;
 }

@@ -8,13 +8,17 @@
         border-radius: 75px;
         margin-right: 30px;
     }
+    h2 {
+        line-height: 0.5em;
+    }
 </style>
 
-<h1>
-    Profile
-</h1>
-
-<div class="flex-horiz">
+<div class="flex-horiz horiz-align-center vert-align-center top-space">
     <img src={profile} alt="Profile photo">
-    <p>Descriptions</p>
+    <div class="text-align-left">
+        <h2>Yu-Chen Lung</h2>
+        Computer Science, B.S.<br>
+        <i>Expected June 2025</i><br>
+        University of California, Los Angeles
+    </div>
 </div>
