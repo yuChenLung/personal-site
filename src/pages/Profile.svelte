@@ -9,7 +9,10 @@
         margin-right: 30px;
     }
     h2 {
-        line-height: 0.5em;
+        line-height: 1em;
+    }
+    div {
+        max-width: 100vw;
     }
 </style>
 

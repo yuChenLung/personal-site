@@ -1,5 +1,4 @@
-# Yu-Chen Lung 
-## Personal Website
+## Yu-Chen Lung's Personal Website
 
 https://yuchenlung.github.io/personal-site/
 
