@@ -1,4 +1,5 @@
 <script>
+    import Footer from "./Footer.svelte";
     import profile from "./profile.jpg";
 </script>
 
@@ -9,19 +10,26 @@
         margin-right: 30px;
     }
     h2 {
-        line-height: 1em;
+        line-height: 0.5em;
     }
     div {
         max-width: 100vw;
     }
+    #outer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 </style>
 
-<div class="flex-horiz horiz-align-center vert-align-center top-space">
-    <img src={profile} alt="Yu-Chen Lung"/>
-    <div class="text-align-left">
-        <h2>Yu-Chen Lung</h2>
-        Computer Science, B.S.<br>
-        <i>Expected June 2025</i><br>
-        University of California, Los Angeles
+<button class="dropdown-section">
+    <div id="outer" class="flex-horiz horiz-align-center vert-align-center">
+        <img src={profile} alt="Yu-Chen Lung"/>
+        <div class="text-align-left">
+            <h2>Yu-Chen Lung</h2>
+            Computer Science, B.S.<br>
+            <i>2021 - Expected June 2025</i><br>
+            University of California, Los Angeles
+        </div>
     </div>
-</div>
+    <Footer/>
+</button>
