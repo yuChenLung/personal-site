@@ -1,7 +1,11 @@
 <script>
     import Contact from "./Contact.svelte";
     import profile from "./page-assets/profile.jpg";
+    let screenSize;
+    $: screenSize, console.log("screenSize: " + screenSize);
 </script>
+
+<svelte:window bind:innerWidth={screenSize} />
 
 <style>
     img {

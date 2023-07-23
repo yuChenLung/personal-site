@@ -1,7 +1,8 @@
-<script>
+<script context="module">
   import Experience from "./pages/Experience.svelte";
   import Profile from "./pages/Profile.svelte";
   import Projects from "./pages/Projects.svelte";
+  import Device from 'svelte-device-info';
 </script>
 
 <style>
