@@ -2,7 +2,6 @@
   import Experience from "./pages/Experience.svelte";
   import Profile from "./pages/Profile.svelte";
   import Projects from "./pages/Projects.svelte";
-  import Device from 'svelte-device-info';
 </script>
 
 <style>
@@ -13,5 +12,5 @@
 
 <Profile/>
 <br>
-<h2><i id="drop-icon" class="fa-solid fa-caret-down"></i> Work Experience</h2>
+<h2 style="margin: 0.5em;"><i id="drop-icon" class="fa-solid fa-caret-down"></i> Work Experience</h2>
 <Experience/>
