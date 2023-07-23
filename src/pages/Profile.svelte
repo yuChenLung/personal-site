@@ -1,6 +1,6 @@
 <script>
-    import Footer from "./Footer.svelte";
-    import profile from "./profile.jpg";
+    import Contact from "./Contact.svelte";
+    import profile from "./page-assets/profile.jpg";
 </script>
 
 <style>
@@ -31,5 +31,5 @@
             University of California, Los Angeles
         </div>
     </div>
-    <Footer/>
+    <Contact/>
 </button>

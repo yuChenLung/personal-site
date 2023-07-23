@@ -2,16 +2,15 @@
   import Experience from "./pages/Experience.svelte";
   import Profile from "./pages/Profile.svelte";
   import Projects from "./pages/Projects.svelte";
-  import Footer from "./pages/Footer.svelte";
 </script>
 
 <style>
- 
+  #drop-icon {
+    margin-right: 10px;
+  }
 </style>
 
 <Profile/>
 <br>
-<!-- <hr> -->
-<h2>Work Experience</h2>
+<h2><i id="drop-icon" class="fa-solid fa-caret-down"></i> Work Experience</h2>
 <Experience/>
-<!-- <Footer/> -->
