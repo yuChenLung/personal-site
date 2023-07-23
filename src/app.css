@@ -21,6 +21,9 @@ a {
 a:visited {
   color: inherit;
 }
+a:hover {
+  color: gray;
+}
 
 body {
   margin: 0;
@@ -70,9 +73,6 @@ button:focus-visible {
   :root {
     color: #213547;
     background-color: #ffffff;
-  }
-  a:hover {
-    color: gray;
   }
   button {
     background-color: #eeeeee;
