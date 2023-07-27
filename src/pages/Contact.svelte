@@ -1,7 +1,3 @@
-<style>
-
-</style>
-
 <hr>
 <div class="flex-horiz vert-align-center horiz-align-center">
     <a target="_blank" href="https://drive.google.com/file/d/1c31gUZeCSdI06Uha9jqUkVZGobQtKmD2/view?usp=sharing">

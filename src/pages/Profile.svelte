@@ -2,6 +2,11 @@
     import Contact from "./Contact.svelte";
     import profile from "./page-assets/profile.jpg";
     let screenSize;
+
+    let eduOn = false;
+    function toggle() {
+        eduOn = !eduOn;
+    }
 </script>
 
 <svelte:window bind:innerWidth={screenSize} />
@@ -41,7 +46,7 @@
     <Contact/>
 </button>
 {:else}
-<button class="dropdown-section">
+<button on:click={toggle} class="dropdown-section">
     <div id="outer" class="flex-horiz horiz-align-center vert-align-center">
         <img src={profile} alt="Yu-Chen Lung"/>
         <div class="text-align-left">
@@ -51,6 +56,9 @@
             University of California, Los Angeles
         </div>
     </div>
+    {#if eduOn}
+    <h1>Content</h1>
+    {/if}
     <Contact/>
 </button>
 {/if}
