@@ -7,6 +7,17 @@
     function toggle() {
         eduOn = !eduOn;
     }
+
+    import { onMount } from 'svelte';
+
+    let isMobile = false;
+    function detectMobileUserAgent() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+    }
+    onMount(() => {
+        isMobile = detectMobileUserAgent();
+    });
 </script>
 
 <svelte:window bind:innerWidth={screenSize} />
@@ -43,7 +54,7 @@
     }
 </style>
 
-{#if screenSize < 450}
+{#if screenSize < 450 || isMobile}
 <button on:click={toggle} class="profile-dropdown-section">
     <div id="outer" class="flex-horiz horiz-align-center vert-align-center">
         <img id="mobile-img" src={profile} alt="Yu-Chen Lung"/>
