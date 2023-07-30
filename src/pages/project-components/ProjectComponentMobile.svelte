@@ -66,6 +66,7 @@
         </div>
     </div>
     {#if strOn}
+    <!-- <hr> -->
     <div class="extra-content text-align-left">
         <hr>
         <b>More Information</b>
@@ -94,7 +95,6 @@
         </div>
     </div>
     {#if hscvOn}
-    <!-- <hr> -->
     <div class="extra-content text-align-left">
         <hr>
         <b>More Information</b>

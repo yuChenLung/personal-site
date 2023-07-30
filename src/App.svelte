@@ -36,6 +36,7 @@
 <!-- {/if} -->
 
 <!-- <button on:click={toggleProf} class="invis-button"> -->
-  <h2><!-- <i id="drop-icon" class="fa-solid fa-caret-down"></i> -->Featured Projects</h2>
+<h2><!-- <i id="drop-icon" class="fa-solid fa-caret-down"></i> -->Featured Projects</h2>
 <!-- </button> -->
+<!-- <Project option="default"/> -->
 

@@ -102,7 +102,6 @@
         </div>
     </div>
     {#if hscvOn}
-    <!-- <hr> -->
     <div class="extra-content text-align-left">
         <hr>
         <b>More Information</b>

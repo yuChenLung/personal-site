@@ -17,16 +17,13 @@
     .teaser-head {
         margin-left: 30px;
         margin-right: 20px;
-        text-align: center;
     }
     .teaser-content {
         margin-left: 20px;
         max-width: 420px;
-        text-align: center;
     }
     .icon-img {
         width: 120px;
-        margin-top: 5px;
     }
     h2 {
         line-height: 1.5em;
@@ -37,6 +34,15 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .extra-content {
+        max-width: 730px;
+    }
+    #extra-content-bullets {
+        line-height: 1.5em;
+    }
+    #hscv-head-content {
+        max-width: 300px;
+    }
     .dropdown-section {
         border-radius: 8px;
         border: 1px solid transparent;
@@ -46,8 +52,7 @@
         font-family: inherit;
         cursor: pointer;
         transition: border-color 0.25s;
-        min-width: 40vw;
-        max-width: 90vw;
+        width: 800px;
     }
 </style>
 
@@ -70,9 +75,11 @@
         <hr>
         <b>More Information</b>
         <ul id="extra-content-bullets">
+            <li>Improved drone surveillance tactic to calculate optimal formation positions based on environmental obstacle positions.</li>
             <li>Communicated and collaborated directly with customer and developers from other companies to set up and adapt a
                 3D-simulation environment for STR’s testing.</li>
             <li>Designed and implemented testing regimens in simulation engine and for field tests to improve system robustness.</li>
+            <li>Led first documentation effort of the DARPA distributed-system architecture and its tactic capabilities.</li>
         </ul>
         <b>Technologies Used:</b> Java and JDK, Gradle/Maven, Unreal Engine/Gazebo, MAVLink
     </div>
@@ -84,26 +91,25 @@
     <div class="flex-horiz vert-align-center horiz-align-center">
         <img class="icon-img" src={ualbanylogo} alt="STR's logo"/>
         <div class="teaser-head flex-vert text-align-left">
-            <h2>University at Albany</h2>
-            UHS Research Program
+            <h2>UAlbany UHS Program</h2>
+            Student Researcher
             <i>2018-2021</i>
             <i>Ardsley, NY</i>
         </div>
         <div id="hscv-head-content" class="teaser-content flex-vert text-align-left">
-            Worked on autonomous tactic drone swarm project based on DARPA distributed-system architecture. Developed swarm tactics in Java and created testing regimes to increase system robustness.
+            Developed deep learning object detection and segmentation system that elinimates the need for human-annotated training data by using synthetic data. Tested application as automated cashier. 
         </div>
     </div>
     {#if hscvOn}
-    <!-- <hr> -->
     <div class="extra-content text-align-left">
         <hr>
         <b>More Information</b>
         <ul id="extra-content-bullets">
-            <li>Communicated and collaborated directly with customer and developers from other companies to set up and adapt a
-                3D-simulation environment for STR’s testing.</li>
-            <li>Designed and implemented testing regimens in simulation engine and for field tests to improve system robustness.</li>
+            <li>Designed and prototyped an object detection system that reduces reliance on human-annotated, pre-existing datasets by training Mask-RCNN object segmentation model with synthetic data.</li>
+            <li>Enabled generalization of the system to different applications by extracting object position data and separately classifying object using fine-tunable MobileNet model layers.</li>
+            <li>Applied novel system to build an automated cashier </li>
         </ul>
-        <b>Technologies Used:</b> Java and JDK, Gradle/Maven, Unreal Engine/Gazebo, MAVLink
+        <b>Technologies Used:</b> Python, Keras and TensorFlow libraries, Nvidia CUDA
     </div>
     
     {/if}
