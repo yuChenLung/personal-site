@@ -130,3 +130,7 @@ button:hover {
   border-left: 1px solid black;
   height: 90px;
 }
+
+#extra-button-divide {
+  margin-top: 15px;
+}

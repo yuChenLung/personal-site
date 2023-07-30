@@ -1,11 +1,10 @@
 <script>
     export let option = "default";
-    import strlogo from "../page-assets/strlogo.png";
-    import ualbanylogo from "../page-assets/ualbanylogo.png";
+    import chipinlogo from "../page-assets/chipinlogo.png";
 
-    let strOn = false;
-    function toggleSTR() {
-        strOn = !strOn;
+    let chipinOn = false;
+    function toggleChipin() {
+        chipinOn = !chipinOn;
     }
     let hscvOn = false;
     function toggleHSCV() {
@@ -51,31 +50,45 @@
     }
 </style>
 
-{#if option == "default" || option == "str"}
-<button on:click={toggleSTR} class="dropdown-section">
+{#if option == "default" || option == "chipin"}
+<button on:click={toggleChipin} class="dropdown-section">
     <div class="flex-horiz vert-align-center horiz-align-center">
-        <img class="icon-img" src={strlogo} alt="STR's logo"/>
+        <img class="icon-img" src={chipinlogo} alt="STR's logo"/>
         <div class="teaser-head flex-vert text-align-left">
-            <h2>STR</h2>
-            SWE Intern
-            <i>June - August 2023</i>
-            <i>San Diego, CA</i>
+            <h2>ChipIn</h2>
+            Lead Front-End Dev
+            <i>April - June 2022</i>
+            <i>Los Angeles, CA</i>
         </div>
         <div class="teaser-content flex-vert text-align-left">
-            Worked on autonomous tactic drone swarm project based on DARPA distributed-system architecture. Developed swarm tactics in Java and created testing regimes to increase system robustness.
+            ChipIn is a web application to connect organizations with volunteers for local events. 
+            Volunteers and organizations can create new groups and join groups to connect and register for events. 
+            Role was dsegin, front-end navigation, scalability, and application of backend capabilities.
         </div>
     </div>
-    {#if strOn}
-    <!-- <hr> -->
+    {#if chipinOn}
     <div class="extra-content text-align-left">
         <hr>
         <b>More Information</b>
         <ul id="extra-content-bullets">
-            <li>Communicated and collaborated directly with customer and developers from other companies to set up and adapt a
-                3D-simulation environment for STR’s testing.</li>
-            <li>Designed and implemented testing regimens in simulation engine and for field tests to improve system robustness.</li>
+            <li>Developed a full stack React web app to connect organizations looking for volunteers with those looking for
+                opportunities.</li>
+            <li>Utilizes Google Firebase to store user data and handle log in and implements Google Maps API for a map to
+                display events.</li>
+            <li>Allows creation of events and groups, sign-ups, volunteer info tracking, and event proximity sorting.</li>
+            <li>Organized and implemented flexible user data flow from backend to frontend.</li>
         </ul>
-        <b>Technologies Used:</b> Java and JDK, Gradle/Maven, Unreal Engine/Gazebo, MAVLink
+        <b>Technologies Used:</b> React, Google Firebase, Google Maps API, Node.js, Javascript, HTML/CSS
+        <br>
+        <hr id="extra-button-divide">
+        <div class="flex-horiz vert-align-center horiz-align-center">
+            <a target="_blank" href="https://drive.google.com/file/d/1QU7wOLk6LNjWFP5zSoBpEw__Jo6VZLeU/view?usp=sharing">
+                <button class="small-button">Presentation <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </a>
+            <a target="_blank" href="https://github.com/megang33/chipin">
+                <button class="small-button">GitHub Repo <i class="fa-brands fa-github"></i></button>
+            </a>
+        </div>
     </div>
     
     {/if}
@@ -83,7 +96,7 @@
 {:else if option="hscvresearch"}
 <button on:click={toggleHSCV} class="dropdown-section">
     <div class="flex-horiz vert-align-center horiz-align-center">
-        <img class="icon-img" src={ualbanylogo} alt="STR's logo"/>
+        <img class="icon-img" src={chipinlogo} alt="STR's logo"/>
         <div class="teaser-head flex-vert text-align-left">
             <h2>University at Albany</h2>
             UHS Research Program
@@ -100,7 +113,7 @@
         <b>More Information</b>
         <ul id="extra-content-bullets">
             <li>Communicated and collaborated directly with customer and developers from other companies to set up and adapt a
-                3D-simulation environment for STR’s testing.</li>
+                3D-simulation environment for STR's testing.</li>
             <li>Designed and implemented testing regimens in simulation engine and for field tests to improve system robustness.</li>
         </ul>
         <b>Technologies Used:</b> Java and JDK, Gradle/Maven, Unreal Engine/Gazebo, MAVLink

@@ -70,9 +70,11 @@
         <hr>
         <b>More Information</b>
         <ul id="extra-content-bullets">
+            <li>Improved drone surveillance tactic to calculate optimal formation positions based on environmental obstacle positions.</li>
             <li>Communicated and collaborated directly with customer and developers from other companies to set up and adapt a
-                3D-simulation environment for STR’s testing.</li>
+                3D-simulation environment for STR's testing.</li>
             <li>Designed and implemented testing regimens in simulation engine and for field tests to improve system robustness.</li>
+            <li>Led first documentation effort of the DARPA distributed-system architecture and its tactic capabilities.</li>
         </ul>
         <b>Technologies Used:</b> Java and JDK, Gradle/Maven, Unreal Engine/Gazebo, MAVLink
     </div>
@@ -94,16 +96,28 @@
         </div>
     </div>
     {#if hscvOn}
-    <!-- <hr> -->
     <div class="extra-content text-align-left">
         <hr>
         <b>More Information</b>
         <ul id="extra-content-bullets">
-            <li>Communicated and collaborated directly with customer and developers from other companies to set up and adapt a
-                3D-simulation environment for STR’s testing.</li>
-            <li>Designed and implemented testing regimens in simulation engine and for field tests to improve system robustness.</li>
+            <li>Designed and prototyped an object detection system that reduces reliance on human-annotated, pre-existing datasets by training Mask-RCNN object segmentation model with synthetic data.</li>
+            <li>Enabled generalization of the system to different applications by extracting object position data and separately classifying object using fine-tunable MobileNet model layers.</li>
+            <li>Applied novel system to build an automated cashier </li>
         </ul>
-        <b>Technologies Used:</b> Java and JDK, Gradle/Maven, Unreal Engine/Gazebo, MAVLink
+        <b>Technologies Used:</b> Python, Keras and TensorFlow libraries, Nvidia CUDA
+        <br>
+        <hr id="extra-button-divide">
+        <div class="flex-horiz vert-align-center horiz-align-center">
+            <a target="_blank" href="https://drive.google.com/file/d/1j5e01iBXNJ9umSKZJ1q9DUrns3wHQFb_/view?usp=sharing">
+                <button class="small-button">Presentation <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </a>
+            <a target="_blank" href="https://drive.google.com/file/d/1RdGTM9PijL5TWBuOHQNCzIPpNmB74Rzz/view?usp=sharing">
+                <button class="small-button">Paper <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </a>
+            <a target="_blank" href="https://github.com/yuChenLung/auto-cashier">
+                <button class="small-button">GitHub Repo <i class="fa-brands fa-github"></i></button>
+            </a>
+        </div>
     </div>
     
     {/if}

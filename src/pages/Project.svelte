@@ -9,11 +9,11 @@
 <svelte:window bind:innerWidth={screenSize} />
 
 {#if screenSize < 450}
-    {#if option == "default"}
-    <ProjectComponentMobile option="default"/>
+    {#if option == "default" || option == "chipin"}
+    <ProjectComponentMobile option="chipin"/>
     {/if}
 {:else}
-    {#if option == "default"}
-    <ProjectComponent option="default"/>
+    {#if option == "default" || option == "chipin"}
+    <ProjectComponent option="chipin"/>
     {/if}
 {/if}

@@ -26,17 +26,12 @@
 
 <Profile/>
 
-<!-- <button on:click={toggleExp} class="invis-button"> -->
-  <h2><!-- <i id="drop-icon" class="fa-solid fa-caret-down"></i> -->Work Experience</h2>
-<!-- </button> -->
-<!-- {#if expOn} -->
+<h2>Work Experience</h2>
 <Experience option="str"/>
+
 <h2>Research Experience</h2>
 <Experience option="hscvresearch"/>
-<!-- {/if} -->
 
-<!-- <button on:click={toggleProf} class="invis-button"> -->
-<h2><!-- <i id="drop-icon" class="fa-solid fa-caret-down"></i> -->Featured Projects</h2>
-<!-- </button> -->
-<!-- <Project option="default"/> -->
+<h2>Featured Projects</h2>
+<Project option="default"/>
 
