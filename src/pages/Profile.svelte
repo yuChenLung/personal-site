@@ -30,10 +30,21 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    #extra-content {
+        margin-top: 10px;
+    }
+    #extra-list {
+        text-align: left;
+        columns: 2;
+        column-gap: 40px;
+    }
+    #mobile-extra-list {
+        text-align: left;
+    }
 </style>
 
 {#if screenSize < 450}
-<button class="dropdown-section">
+<button on:click={toggle} class="profile-dropdown-section">
     <div id="outer" class="flex-horiz horiz-align-center vert-align-center">
         <img id="mobile-img" src={profile} alt="Yu-Chen Lung"/>
         <div>
@@ -43,10 +54,25 @@
             University of California, Los Angeles
         </div>
     </div>
+    {#if eduOn}
+    <div id="extra-content">
+        <b>Relevant Coursework</b>
+        <ul id="mobile-extra-list">
+            <li>Data Structures and Algorithms</li>
+            <li>Operating Systems Principles</li>
+            <li>Programming Languages</li>
+            <li>Computer Network Fundamentals</li>
+            <li>Fundamentals of AI</li>
+            <li>Computer Systems Architecture</li>
+            <li>Software Construction</li>
+            <li>Intro to Electrical Engineering</li>
+        </ul>
+    </div>
+    {/if}
     <Contact/>
 </button>
 {:else}
-<button on:click={toggle} class="dropdown-section">
+<button on:click={toggle} class="profile-dropdown-section">
     <div id="outer" class="flex-horiz horiz-align-center vert-align-center">
         <img src={profile} alt="Yu-Chen Lung"/>
         <div class="text-align-left">
@@ -57,8 +83,24 @@
         </div>
     </div>
     {#if eduOn}
-    <h1>Content</h1>
-    {/if}
+        <div class="horiz-align-center"><div id="extra-content">
+            <b>Relevant Coursework</b>
+            <div class="flex-horiz">
+                <ul id="extra-list">
+                    <li>Data Structures and Algorithms</li>
+                    <li>Operating Systems Principles</li>
+                    <li>Programming Languages</li>
+                    <li>Computer Network Fundamentals</li>
+                    <li>Fundamentals of AI</li>
+                    <li>Computer Systems Architecture</li>
+                    <li>Software Construction</li>
+                    <li>Intro to Electrical Engineering</li>
+                </ul>
+            </div>
+            
+        </div></div>
+        {/if}
+    
     <Contact/>
 </button>
 {/if}
