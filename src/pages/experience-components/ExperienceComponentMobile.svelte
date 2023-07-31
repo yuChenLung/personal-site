@@ -101,8 +101,9 @@
         <b>More Information</b>
         <ul id="extra-content-bullets">
             <li>Designed and prototyped an object detection system that reduces reliance on human-annotated, pre-existing datasets by training Mask-RCNN object segmentation model with synthetic data.</li>
-            <li>Enabled generalization of the system to different applications by extracting object position data and separately classifying object using fine-tunable MobileNet model layers.</li>
-            <li>Applied novel system to build an automated cashier </li>
+            <li>Enabled generalization of the system to different applications by extracting object position data and separately classifying objects using fine-tunable MobileNet model layers.</li>
+            <li>Applied novel system to build an automated cashier that calculates total price of food items on a tray.</li>
+            <li><i>Genius Olympiad Finalist, 1st Place JSHS, USAID Science Champion Award</i></li>
         </ul>
         <b>Technologies Used:</b> Python, Keras and TensorFlow libraries, Nvidia CUDA
         <br>
